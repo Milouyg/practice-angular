@@ -1,0 +1,81 @@
+@use "../../../variables.scss";
+
+.projects{
+    width: 100vw;
+    height: 50rem;
+    text-align: center;
+    background: variables.$background;
+    position: relative;
+    z-index: 2;
+
+    .title{
+        font-size: variables.$fontSizeTitle;
+        color: variables.$fontColorTitle;
+        margin-bottom: 1rem;
+    }
+
+    .explanation{
+        color: variables.$fontColorTitle;
+        font-size: map-get(variables.$projecten, "fontSize");
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50rem;
+
+        .info{
+            margin-bottom: 2rem;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 20%;
+            height: 30rem;
+            font-size: 110%;
+            color: white;
+
+            &.show{
+                display: flex;
+                transition: ease-in-out;
+                animation-name: "fade-in";
+                animation-duration: 1s;
+
+            }
+
+            &.hidden{
+                display: none;
+            }
+
+            .link{
+                padding-bottom: 1rem;
+                color: white;
+            }
+        }
+    }
+}
+
+@keyframes fade-in {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+// @keyframes fade-out {
+//     0% {
+//         transform: scale(1);
+//         opacity: 1;
+//     }
+//     100% {
+//         transform: scale(0);
+//         opacity: 0;
+//     }
+// }
+

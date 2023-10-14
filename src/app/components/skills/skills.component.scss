@@ -1,0 +1,21 @@
+@use "../../../variables.scss";
+
+.skills{
+    width: 100vw;
+    height: 25rem;
+    background: variables.$background;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+        .title{
+            font-size: variables.$fontSizeTitle;
+            color: variables.$fontColorTitle;
+        }
+
+        .description{
+            font-size: map-get(variables.$skills, "fontSize");
+            color: map-get(variables.$skills, "color");
+        }
+}

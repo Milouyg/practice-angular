@@ -1,0 +1,16 @@
+<section id="projects" class="projects" (click)="closeInfo()">
+    <h1 class="title">Projecten</h1>
+    <p class="explanation">{{description}}</p>
+    <div class="container">
+        <ng-container *ngFor="let project of projects">
+            <app-blob [id]="project.id" [blobText]="project.title" [width]="project.width" [top]="project.top" [left]="project.left" (projectClickEvent)="moveAnimation(project)" (projectHoverEvent)="hover(project)" [drag]="false" [strokeWidth]=".5" [strokeColor]="'white'"></app-blob>
+            <div [id]="project.id + '-info'" class="info" [ngClass]="project.visible === true ? 'show' : 'hidden' ">
+                <h1 class="title">{{project.title}}</h1>
+                <p class="description">{{project.description}}</p>
+                <a [href]="project.link" class="link">Github link</a>
+                <img [src]="project.imgData.scr" [alt]="project.imgData.alt">
+            </div>
+        </ng-container>
+    </div>
+</section>
+

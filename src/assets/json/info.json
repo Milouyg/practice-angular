@@ -1,0 +1,25 @@
+{
+    "landing-page":{
+        "title": "Ik ben een Front-end Webdeveloper",
+        "buttons":{
+            "leftButton":"Projecten",
+            "rightButton":"Contact me"
+        }
+    },
+    "about-me":{
+        "title": "Over mij",
+        "desciption":"Dit is een test"
+    },
+    "skills":{
+        "title":"Vaardigheden",
+        "desciption": "Lorem"
+    },
+    "projects":{
+        "title":"Projecten",
+        "desciption": "Klik op één van de blobs om meer informatie over mijn projecten te krijgen"
+    },
+    "contact":{
+        "title":"Contacten",
+        "description":"Lorem ipsum"
+    }
+}

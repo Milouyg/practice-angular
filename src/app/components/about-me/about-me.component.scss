@@ -1,0 +1,20 @@
+@use "../../../variables.scss";
+
+.about-me{
+    width: 100vw;
+    height: 50rem;
+    text-align: center;
+    background: variables.$background;
+    position: relative;
+    z-index: 2;
+
+        .title{
+            font-size: variables.$fontSizeTitle;
+            color: map-get(variables.$aboutMe, "h1" );
+        }
+
+        .description{
+            font-size: 150%;
+            color: map-get(variables.$aboutMe, "text" );
+        }
+}

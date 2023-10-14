@@ -1,0 +1,52 @@
+<section id="landing-page" class="landing-page">
+        <div class="content">
+            <h1 class="title">{{title}}</h1>
+            <p class="text">Een Front-End Developer die zich bezig houdt met het schrijven van nette en efficiënte code</p>
+            <div class="button-wrapper">
+                <button class="cta">{{leftButton}}</button>
+                <button class="cta">{{rightButton}}</button>
+            </div>
+        </div>
+    <app-blob [id]="'blob1'" [drag]="false" [width]="95" [top]="-30" [left]="-25"></app-blob>
+    <app-blob [id]="'blob2'" [drag]="false" [width]="18" [top]="0" [left]="100"></app-blob>
+    <app-blob [id]="'blob3'" [drag]="false" [width]="28" [top]="25" [left]="65"></app-blob>
+    <app-blob [id]="'blob4'" [drag]="false" [width]="6" [top]="10" [left]="90"></app-blob>
+    <app-blob [id]="'blob5'" [drag]="false" [width]="11" [top]="38" [left]="92"></app-blob>
+
+</section>
+
+
+<!-- <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="100%" id="blobSvg">
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color: rgb(254, 0, 244);"></stop>
+                        <stop offset="100%" style="stop-color: rgb(251, 2, 128);"></stop>
+                    </linearGradient>
+                </defs>
+                <path fill="url(#gradient)">
+                    <animate attributeName="d"
+                            dur="10000ms"
+                            repeatCount="indefinite"
+
+                            values="M398,286Q400,322,365.5,336.5Q331,351,310.5,
+                            388.5Q290,426,247.5,437Q205,448,156.5,438Q108,
+                            428,72.5,390.5Q37,353,69.5,301.5Q102,250,70,199Q38,148,71,107.5Q104,67,158.5,
+                            78Q213,89,250.5,85Q288,81,315.5,107Q343,133,380.5,151Q418,169,407,209.5Q396,250,398,286Z;
+
+                            M433.5,303.5Q471,357,433,394.5Q395,432,345,440Q295,448,252,438.5Q209,429,172.5,
+                            411.5Q136,394,98,
+                            368Q60,342,70.5,296Q81,250,73.5,205.5Q66,161,95,126.5Q124,92,167,
+                            84.5Q210,77,257.5,43Q305,9,345.5,
+                            44Q386,79,387,131.5Q388,184,392,217Q396,250,433.5,303.5Z;
+
+
+
+                            M398,286Q400,322,365.5,336.5Q331,351,310.5,
+                            388.5Q290,426,247.5,437Q205,448,156.5,438Q108,
+                            428,72.5,390.5Q37,353,69.5,301.5Q102,250,70,199Q38,148,71,107.5Q104,67,158.5,
+                            78Q213,89,250.5,85Q288,81,315.5,107Q343,133,380.5,151Q418,169,407,209.5Q396,250,398,286Z;"
+                            >
+                    </animate>
+                </path>
+            </svg> -->

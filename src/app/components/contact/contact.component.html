@@ -1,0 +1,22 @@
+<section id="contact" class="contact">
+    <h1 class="header">{{title}}</h1>
+    <div class="wrapper">
+        <p class="description">
+            {{description}}
+        </p>
+    </div>
+    <form method="post" class="container" action="">
+        <input class="input" type="text" name="fname" placeholder="Voornaam">
+        <input class="input" type="text" name="lname" placeholder="Achternaam">
+        <input class="input" type="text" name="email" placeholder="Email">
+        <textarea class="textarea" name="message" id="" cols="30" rows="10" placeholder="Vul hier uw bericht in"></textarea>
+        <input class="input input__submit" type="submit" value="submit">
+    </form>
+    <!-- <app-blob [id]="'blob13'" [drag]="false" [width]="55" [top]="15" [left]="82" [strokeWidth]=".3" [strokeColor]="'white'"></app-blob> -->
+    <app-blob [isBlobImg]="true" [urlLink]="'./assets/img/shakingHands.png'" [id]="'blob17'" [fill]="'none'" [strokeWidth]="1" [strokeColor]="'white'" [drag]="false" [width]="18" [top]="5" [left]="5" [rotate]="true"></app-blob>
+    <app-blob [isBlobImg]="true" [urlLink]="'./assets/img/socialeContact.jpg'" [id]="'blob23'" [fill]="'none'" [strokeWidth]="1" [strokeColor]="'white'" [drag]="false" [width]="15" [top]="25" [left]="95" [rotate]="true"></app-blob>
+    <app-blob [isBlobImg]="true" [urlLink]="'./assets/img/connections.jpg'" [id]="'blob24'" [fill]="'none'" [strokeWidth]="1" [strokeColor]="'white'" [drag]="false" [width]="10" [top]="40" [left]="85" [rotate]="true"></app-blob>
+
+
+</section>
+
